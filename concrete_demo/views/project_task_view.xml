@@ -22,10 +22,10 @@
 
 
         <record id="odoo_job_costing_management.action_view_job_orders" model="ir.actions.act_window">
-            <field name="name">SQ</field>
+            <field name="name">SKU</field>
         </record>
         <record id="odoo_job_costing_management.menu_job_cost_order" model="ir.ui.menu">
-            <field name="name">SQ</field>
+            <field name="name">SKU</field>
         </record>
 
 
