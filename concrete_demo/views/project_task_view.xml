@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+
+        <record id="view_task_form2" model="ir.ui.view">
+            <field name="name">project.task.form</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='job_cost_task_material']" position="after">
+                    <page string="Sizes" name="job_cost_task_material">
+                        <field name="sizes_ids" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="size"/>
+                                <field name="amount" sum="Total"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+
+            </field>
+        </record>
+
+
+        <record id="odoo_job_costing_management.action_view_job_orders" model="ir.actions.act_window">
+            <field name="name">SQ</field>
+        </record>
+        <record id="odoo_job_costing_management.menu_job_cost_order" model="ir.ui.menu">
+            <field name="name">SQ</field>
+        </record>
+
+
+    </data>
+</odoo>
