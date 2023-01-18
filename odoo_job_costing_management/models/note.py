@@ -14,7 +14,7 @@ class Note(models.Model):
     
     project_id = fields.Many2one(
         'project.project',
-        string='Construction Project',
+        string='Project',
     )
     task_id = fields.Many2one(
         'project.task',

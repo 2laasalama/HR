@@ -62,7 +62,7 @@ class PurchaseRequisition(models.Model):
     )
     project_id = fields.Many2one(
         'project.project',
-        string='Construction Project',
+        string='Project',
     )
     purchase_order_id = fields.Many2one(
         'purchase.order',
